@@ -3,6 +3,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 project(homework3-11-3)
+
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 add_library(LeaverDynamicLibrary SHARED LeaverDynamicLib.h LeaverDynamicLib.cpp)
 add_executable(DynamicLibraryClientExe DynamicLibraryClient.cpp)
 target_link_libraries(DynamicLibraryClientExe LeaverDynamicLibrary)
